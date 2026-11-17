@@ -808,13 +808,12 @@ footer p {
 
     .fotos {
         grid-template-columns: 1fr;
-        grid-template-rows: none;
+        grid-template-rows: 24rem 16rem 16rem;
         grid-auto-rows: 16rem;
     }
 
     .foto-piscina {
         grid-row: auto;
-        height: 24rem;
     }
 
     .meses {
