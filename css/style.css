@@ -29,6 +29,8 @@
 }
 
 html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
     scroll-behavior: smooth;
     scroll-padding-top: 4.5rem;
 }
@@ -46,6 +48,12 @@ body {
 img {
     max-width: 100%;
     display: block;
+}
+
+button,
+a {
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
 }
 
 h1,
@@ -696,6 +704,97 @@ footer p {
 
     header > .botao {
         margin-left: auto;
+        padding: 0.6rem 1.1rem;
+    }
+
+    header h2 {
+        font-size: 1.4rem;
+    }
+
+    header nav {
+        scrollbar-width: none;
+    }
+
+    header nav::-webkit-scrollbar {
+        display: none;
+    }
+
+    header nav a {
+        white-space: nowrap;
+    }
+
+    /* Depois de rolar, o cabeçalho encolhe para uma linha só */
+    header.rolou nav {
+        display: none;
+    }
+
+    body {
+        font-weight: 400;
+        font-size: 1rem;
+    }
+
+    .hero-conteudo p {
+        font-size: 1.15rem;
+    }
+
+    .hero-conteudo p::before {
+        width: 2rem;
+    }
+
+    .hero-conteudo span {
+        font-size: 1rem;
+    }
+
+    .botao {
+        letter-spacing: 0.14em;
+    }
+
+    .calendario {
+        padding: 1.1rem 0.75rem;
+    }
+
+    .calendario-topo {
+        inset: 1rem 0.75rem auto;
+    }
+
+    .calendario-topo button {
+        width: 2.75rem;
+        height: 2.75rem;
+    }
+
+    .grade {
+        gap: 2px;
+    }
+
+    .dia {
+        font-size: 1rem;
+    }
+
+    .reservas > .botao {
+        width: 100%;
+        max-width: 22rem;
+        text-align: center;
+    }
+
+    .admin-periodo,
+    .admin-periodo label,
+    .admin-periodo input {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .admin-acoes .botao {
+        width: 100%;
+        text-align: center;
+    }
+
+    .admin-lista li {
+        flex-wrap: wrap;
+    }
+
+    footer {
+        /* espaço para o botão fixo do WhatsApp não cobrir o texto */
+        padding-bottom: 5.5rem;
     }
 
     .sobre {
