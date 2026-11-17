@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Recanto do Vale: chácara com piscina, área gourmet e vista aberta para o vale. Consulte as datas disponíveis.">
+
+    <title>Recanto do Vale | Chácara</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h2>Recanto do Vale</h2>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#sobre">A chácara</a>
+            <a href="#galeria">Galeria</a>
+            <a href="#reservas">Reservas</a>
+        </nav>
+
+        <a href="#reservas" class="botao">Consultar datas</a>
+    </header>
+
+    <main>
+
+        <section id="inicio" class="hero">
+
+            <img
+                src="imagens/chacara.jpg"
+                alt="Pôr do sol sobre o vale, visto da piscina e do pergolado da chácara"
+                class="hero-imagem"
+            >
+
+            <div class="hero-conteudo">
+                <p>Um lugar para desconectar</p>
+
+                <h1>Seu descanso começa aqui.</h1>
+
+                <span>
+                    Viva momentos especiais em meio à natureza,
+                    conforto e tranquilidade.
+                </span>
+
+                <a href="#reservas" class="botao">Consulte disponibilidade</a>
+            </div>
+
+        </section>
+
+        <section id="sobre" class="sobre">
+
+            <p>Seja bem-vindo</p>
+
+            <h2>Conheça o Recanto do Vale</h2>
+
+            <span>
+                Um espaço preparado para reunir pessoas especiais,
+                aproveitar a piscina e criar boas lembranças, do
+                café da manhã ao pôr do sol.
+            </span>
+
+            <ul class="destaques">
+                <li>Piscina com cascata</li>
+                <li>Área gourmet coberta, com mesa grande e sinuca</li>
+                <li>Pergolado iluminado, com rede</li>
+                <li>Vista aberta para o vale</li>
+            </ul>
+
+        </section>
+
+        <section id="galeria" class="galeria">
+
+            <h2>Nosso espaço</h2>
+
+            <p>Conheça um pouco da nossa estrutura.</p>
+
+            <div class="fotos">
+                <figure class="foto-piscina">
+                    <img src="imagens/piscina.jpg" alt="Piscina com cascata de aço e vista para o vale" loading="lazy">
+                    <figcaption>A piscina</figcaption>
+                </figure>
+
+                <figure class="foto-gourmet">
+                    <img src="imagens/area-gourmet.jpg" alt="Área gourmet coberta com mesa de madeira e mesa de sinuca" loading="lazy">
+                    <figcaption>Área gourmet com churrasqueira grande</figcaption>
+                </figure>
+
+                <figure class="foto-noite">
+                    <img src="imagens/saladeestar.jpg" alt="Iluminação aconchegante, sofá confortável e uma linda vista" loading="lazy">
+                    <figcaption>Sala de estar</figcaption>
+                </figure>
+            </div>
+
+        </section>
+
+        <section id="reservas" class="reservas">
+
+            <h2>Planeje sua estadia</h2>
+
+            <p>
+                Veja quais datas estão livres, escolha a entrada e a saída
+                e envie sua consulta pelo WhatsApp.
+            </p>
+
+            <div class="calendario" id="calendario">
+                <div class="calendario-topo">
+                    <button type="button" id="mes-anterior" aria-label="Mês anterior">&#8249;</button>
+                    <button type="button" id="mes-seguinte" aria-label="Próximo mês">&#8250;</button>
+                </div>
+
+                <div class="meses" id="meses"></div>
+
+                <ul class="legenda">
+                    <li><i class="amostra livre"></i> Livre</li>
+                    <li><i class="amostra alugado"></i> Alugado</li>
+                    <li><i class="amostra escolhido"></i> Sua escolha</li>
+                </ul>
+            </div>
+
+            <p class="resumo" id="resumo" aria-live="polite">Escolha o dia de entrada.</p>
+
+            <a href="#" class="botao cheio" id="whatsapp" target="_blank" rel="noopener">
+                Consultar pelo WhatsApp
+            </a>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Recanto do Vale. Todos os direitos reservados.</p>
+    </footer>
+
+    <a href="#" class="whatsapp-fixo" id="whatsapp-fixo" target="_blank" rel="noopener" aria-label="Falar pelo WhatsApp">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.7-5.4A8.4 8.4 0 1 1 21 11.5Z"/>
+    </svg>
+    <span>WhatsApp</span>
+    </a>
+
+    <script src="datas.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+
+    <title>Administrar calendário | Recanto do Vale</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="admin">
+
+    <main class="admin-main">
+
+        <h1>Calendário do Recanto do Vale</h1>
+
+        <p class="admin-intro">
+            Clique em um dia para marcá-lo como alugado. Clique de novo para liberá-lo.
+            Depois de terminar, baixe o arquivo e envie para o seu site.
+        </p>
+
+        <div class="calendario">
+            <div class="calendario-topo">
+                <button type="button" id="mes-anterior" aria-label="Mês anterior">&#8249;</button>
+                <button type="button" id="mes-seguinte" aria-label="Próximo mês">&#8250;</button>
+            </div>
+
+            <div class="meses" id="meses"></div>
+
+            <ul class="legenda">
+                <li><i class="amostra livre"></i> Livre</li>
+                <li><i class="amostra alugado"></i> Alugado</li>
+            </ul>
+        </div>
+
+        <div class="admin-bloco">
+            <h2>Marcar ou liberar um período</h2>
+
+            <div class="admin-periodo">
+                <label>De <input type="date" id="de"></label>
+                <label>Até <input type="date" id="ate"></label>
+            </div>
+
+            <div class="admin-acoes">
+                <button type="button" class="botao cheio" id="marcar">Marcar como alugado</button>
+                <button type="button" class="botao escuro" id="liberar">Liberar período</button>
+            </div>
+
+            <p class="admin-aviso" id="aviso" aria-live="polite"></p>
+        </div>
+
+        <div class="admin-bloco">
+            <h2>Períodos alugados</h2>
+            <ul class="admin-lista" id="lista"></ul>
+        </div>
+
+        <div class="admin-bloco">
+            <h2>Publicar no site</h2>
+
+            <p class="admin-status" id="status" aria-live="polite"></p>
+
+            <button type="button" class="botao cheio" id="baixar">Baixar datas.js</button>
+
+            <ol class="admin-passos">
+                <li>Clique em “Baixar datas.js”.</li>
+                <li>Envie esse arquivo para o seu site, substituindo o <strong>datas.js</strong> que já está lá.</li>
+                <li>Abra o site e atualize a página. Se não mudar, atualize forçando (Ctrl + F5).</li>
+            </ol>
+        </div>
+
+    </main>
+
+    <script src="datas.js"></script>
+    <script src="admin.js"></script>
+
+</body>
+</html>
